@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+      @apply bg-[#8C73FC];
+      /* @apply bg-[#84DCC6]; */
+    }
+}
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  
+  @font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 1;
+  }
+
+  .mint {
+    font-palette: --Mint;
+    font-family: Rocher;
+  }
+
+.header-sect{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Fira Sans', sans-serif;
+}
+.active-field{
+    background-color: #f9cc6d;
+    transition: 0.5s ;
+}
+.flexbox-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.flexbox-item{
+    position: relative;
+    width: 21rem;
+    height: 10.6rem;
+    background-color: #B8A6F2;
+    border-radius: 4%;
+    /* background-color: #A5FFD6; */
+    margin: 10px;
+}
+.flexbox-item2{
+  position: relative;
+  width: 8rem;
+  height: 7rem;
+  background-color: #B8A6F2;
+  border-radius: 4%;
+  /* background-color: #A5FFD6; */
+  margin: 10px;
+}
+.pic{
+    position: absolute;
+    right: 0rem;
+    top: 1.7rem;
+    height: 8rem;
+}
+.name{
+  font-family: 'Playfair Display', serif;
+    margin: 0rem 0rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 2rem;
+    text-align: center;
+    /* text-shadow: -3px 1px 4px #ced0d3; */
+    letter-spacing: 0.09em;
+    /* color: #FFB650; */
+    color: #E86D83;
+    text-shadow: 1px 1px 0px #F9f1cc, 
+      2px 2px 0px #FFD662, 
+      /* 3px 3px 0px  #FF80BF,  */
+      /* 4px 4px 0px #EF5097,  */
+      3px 3px 0px #6868AC, 
+      4px 4px 0px #90B1E0;
+  
+}
+
+
+.department{
+  font-size: 1.4rem;
+  margin: 1.2rem 1rem;
+  color: #8C73FC;
+  font-weight: 1000;
+  text-shadow: 1px 1px 0px white ;
+  font-family: 'Calligraffitti', cursive; 
+}
+.wish{
+  position: absolute;
+  width: 20.5rem;
+  display: flex;
+  bottom: 0.3rem;
+  font-family: 'Gochi Hand', cursive;
+  color: white;
+  line-height: 1rem;
+  z-index: 1;
+}
+
+@font-palette-values --Mint2 {
+  font-family: Rocher;
+  base-palette: 4;
+}
+.birthdate{
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 2rem 0 1.5rem 0;
+  font-palette: --Mint2;
+  font-family: Rocher;
+}
+
+.zodiac{
+  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin: 3rem;
+  font-weight: 500;
+}
+
+.bday{
+  display: none;
+}
+
+footer{    
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.5);
+}
+.credits{
+  padding: 1rem;
+}
+
+.csname{
+  font-family: 'Gochi Hand', cursive; 
+  font-size: 1.2rem;
+}
+.csbday,.csdept{
+  color:white;
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+} */
